@@ -1,16 +1,17 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que evalúe la siguiente expresión:
-    // (a+7*c)/(b+2-a)+2*b
-    let valor1 = Number(prompt("Ingrese el primer valor", 3));
-    let valor2 = Number(prompt("Ingrese el segundo valor", 5));
-    let valor3 = Number(prompt("Ingrese el tercer  valor", 8));
-
-    console.group();
-        console.log(`la siguiente expresión: : "(${(valor1+7*valor3)} / ${valor2+2-valor1} + ${2*valor2})"`);
-    console.groupEnd();
-    console.group();
-        console.log(`calcule el volumen de una esfera : "${(valor1+7*valor3)/(valor2+2-valor1)+2*valor2}"`);
-    console.groupEnd();
-
-
-})
+    //     Escribir un programa que calcule el área y el volumen de un cilindro:
+    // A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
+    // V = (PI * r2) * h
+        let valor1 = Number(prompt("Ingrese el radio del cilindro", 3));
+        let valor2 = Number(prompt("Ingrese la altura del cilindro", 3));
+        let A = (2 * (Math.PI * valor1)) + ((2 * Math.PI * valor1) * valor2)
+        let V = (Math.PI * valor1) * valor2
+        console.group();
+            console.log(`el áreae un cilindro : "${A}"`);
+        console.groupEnd();
+        console.group();
+            console.log(`l volumen de un cilindro : "${V}"`);
+        console.groupEnd();
+    
+    
+    })
