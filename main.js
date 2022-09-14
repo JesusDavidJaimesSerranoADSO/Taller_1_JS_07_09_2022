@@ -1,16 +1,11 @@
 addEventListener("DOMContentLoaded", ()=>{
-// //     16. Elaborar un algoritmo para calcular el promedio final de la materia de algoritmos. Dicha calificación se
-// compone de los siguientes porcentajes:
-// • 55% del promedio final de sus calificaciones de los tres(3) parciales.
-// • 30% de la calificación examen final y
-// • 15% de la calificación trabajo final.
-    let valor1 = Number(prompt(`ingrese el valor del 1 parcial`,7));
-    let valor2 = Number(prompt(`ingrese el valor del 2 parcial`,7));
-    let valor3 = Number(prompt(`ingrese el valor del 3 parcial`,7));
-    let examen = Number(prompt(`ingrese el valor del examen`,6));
-    let trabajo = Number(prompt(`ingrese el valor del trabajo final`,3));
-    let sparcial = valor1 + valor2 + valor3
-    let nTotal = (sparcial * 0.55) + (examen * 0.30) + (trabajo * 0.15)
+    // Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del
+    // producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el
+    // tiempo y de un producto a otro, este dato se lee por teclado.
+    let valor = Number(prompt(`ingrese el valor del producto`,1600));
+    let iva = Number(prompt(`ingrese el valor del IVA`,10));
+    let iva2 = iva / 100
+    let nTotal = valor + (valor * iva2)
 
     console.log(`promedio final de la materia de algoritmos es ${nTotal}`)
     }) 
