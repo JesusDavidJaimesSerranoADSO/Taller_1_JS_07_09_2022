@@ -1,17 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
-    //     Escribir un programa que calcule el área y el volumen de un cilindro:
-    // A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
-    // V = (PI * r2) * h
-        let valor1 = Number(prompt("Ingrese el radio del cilindro", 3));
-        let valor2 = Number(prompt("Ingrese la altura del cilindro", 3));
-        let A = (2 * (Math.PI * valor1)) + ((2 * Math.PI * valor1) * valor2)
-        let V = (Math.PI * valor1) * valor2
-        console.group();
-            console.log(`el áreae un cilindro : "${A}"`);
-        console.groupEnd();
-        console.group();
-            console.log(`l volumen de un cilindro : "${V}"`);
-        console.groupEnd();
-    
+//     Escribir un algoritmo que permita obtener las raíces reales de la ecuación de segundo grado: A * x2 +
+// b * x + c, siendo X un valor constante.
+    let valor1 = Number(prompt(`ingrese el valor 1`,2));
+    let valor2 = Number(prompt(`ingrese el valor 2`,5));
+    let valor3 = Number(prompt(`ingrese el valor 3`,2));
+    let suma = Math.sqrt(valor2**2-(4*valor1*valor3));
+    let raiz = ((-1*valor2) + suma);
+    let divicion =  raiz / 2 * valor1;
+
+    console.log (`ecuación de segundo grado: A * x2 + b * x + c da como resultado ${divicion}`)
     
     })
