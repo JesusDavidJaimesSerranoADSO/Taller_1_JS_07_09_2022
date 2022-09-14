@@ -1,9 +1,12 @@
 addEventListener("DOMContentLoaded", ()=>{
-//     Calcular el sueldo de un empleado dados comodatos de entrada: el nombre, hrs. De trabajo y el pago
-// en hora. Pagohora=15300
-    let nombre = prompt(`ingrese su nombre`,);
-    let hora = Number(prompt(`ingrese sus horas laboradas`,5));
-    let Pagohora=hora * 15300
+    // Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
+    // correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5
+    // puntos.
+    let valor1 = Number(prompt(`ingrese la nota del examen 1`,5));
+    let valor2 = Number(prompt(`ingrese la nota del examen 2`,6));
+    let valor3 = Number(prompt(`ingrese la nota del examen 3`,5));
+    let valor4 = Number(prompt(`ingrese la nota del examen 4`,6));
+    let prom = (valor1 + valor2 + valor3 + valor4) / 4
 
-    console.log(`señor ${nombre} su pago por las ${hora} horas laboradas es de ${Pagohora}`)
+    console.log(`el promedio de las notas es de ${prom}`)
     }) 
