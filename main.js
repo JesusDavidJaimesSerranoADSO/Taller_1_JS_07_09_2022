@@ -1,13 +1,8 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil expresada en
-    // kilómetros por hora, proporcione la velocidad en metros por segundos.
-    let valor = Number(prompt(`ingrese la velocidad en kilometros/hora`,15))
-    let conv = valor * 1000 / 60 /60 
+//     Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
+// ingresando el costo de los medicamentos calcules el descuento y el precio final.
+    let valor = Number(prompt(`ingrese el valor del medicamento`,3600));
+    let desc = valor - (valor * 0.10)
 
-    console.group
-        console.log(`la velocidad de un automóvil expresada en kilómetros por hora: ${valor}`)
-    console.groupEnd
-    console.group
-        console.log(`la velocidad de un automóvil en metros por segundos: ${conv}`)
-    console.groupEnd
+    console.log(`el valor del medicamento es de ${desc}`)
     }) 
