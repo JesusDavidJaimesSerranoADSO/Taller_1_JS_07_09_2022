@@ -1,12 +1,9 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule el volumen de un elipsoide
-    // V = (4/3) * PI * a * b *c
-     let valor1 = Number(prompt(`ingrese el valor #1`,3))
-     let valor2 = Number(prompt(`ingrese el valor #2`,6))
-     let valor3 = Number(prompt(`ingrese el valor #3`,2))
-     let volumes = (4/3) * Math.PI * valor1 * valor2 * valor3
+//     Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
+// pesos y un IVA de 20%.
+    let valor = Number(prompt(`ingrese la duracion de la llamada (minuto)`));
+    let costo = valor * 355;
+    let iva = costo + (costo * 0.20)
 
-     console.group
-        console.log (`el volumen de un elipsoide es ${volumes}`)
-    console.groupEnd
+    console.log(`el pago de una llamada telefónica corresoponde a ${iva}`)
     }) 
